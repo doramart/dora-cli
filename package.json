@@ -1,0 +1,47 @@
+{
+  "name": "dora-cli",
+  "version": "1.0.0",
+  "description": "dora-cli",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "chalk": "^4.1.0",
+    "commander": "2.15.1",
+    "decompress": "^4.2.1",
+    "download": "^8.0.0",
+    "fs-extra": "^9.0.1",
+    "inquirer": "^7.3.3",
+    "lodash": "^4.17.19",
+    "minimatch": "3.0.4",
+    "mkdirp": "0.5.1",
+    "os": "^0.1.1",
+    "proxy-from-env": "^1.1.0",
+    "shelljs": "^0.8.4",
+    "sorted-object": "2.0.1"
+  },
+  "bin": {
+    "dora": "./bin/dora.js",
+    "dora-init": "./bin/dora-create.js"
+  },
+  "devDependencies": {
+    "eslint": "5.16.0",
+    "eslint-config-standard": "12.0.0",
+    "eslint-plugin-import": "2.17.2",
+    "eslint-plugin-node": "8.0.1",
+    "eslint-plugin-promise": "4.1.1",
+    "eslint-plugin-standard": "4.0.0",
+    "mocha": "6.1.4",
+    "rimraf": "2.6.3",
+    "supertest": "4.0.2",
+    "tree-kill": "1.2.1",
+    "uid-safe": "2.1.5",
+    "validate-npm-package-name": "^3.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "doracms"
+  ],
+  "author": "doramart",
+  "license": "MIT"
+}
