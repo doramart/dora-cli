@@ -1,7 +1,7 @@
 {
-  "name": "dora-cli",
+  "name": "doracms",
   "version": "1.0.0",
-  "description": "dora-cli",
+  "description": "doracms",
   "dependencies": {
     "axios": "^0.19.2",
     "chalk": "^4.1.0",
