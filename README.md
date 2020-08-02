@@ -1,0 +1,2 @@
+# dora-cli
+doracms generate
