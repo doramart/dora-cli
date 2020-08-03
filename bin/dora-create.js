@@ -4,7 +4,7 @@
  * @Author: doramart 
  * @Date: 2020-08-01 11:29:11 
  * @Last Modified by: doramart
- * @Last Modified time: 2020-08-02 22:26:58
+ * @Last Modified time: 2020-08-03 23:36:05
  */
 
 var fs = require('fs')
@@ -172,15 +172,6 @@ async function createApplication(name, dir) {
 
   installApp(dir, prjInfo);
 
-  var prompt = launchedFromCmd() ? '>' : '$'
-
-
-  if (launchedFromCmd()) {
-    console.log('     %s SET DEBUG=%s:* & npm start', prompt, name)
-  } else {
-    console.log('     %s DEBUG=%s:* npm start', prompt, name)
-  }
-
   console.log()
 }
 
@@ -235,15 +226,6 @@ function exit(code) {
   done()
 }
 
-/**
- * Determine if launched from cmd.exe
- */
-
-function launchedFromCmd() {
-  return process.platform === 'win32' &&
-    process.env._ === undefined
-}
-
 
 /**
  * Main program.
@@ -260,7 +242,6 @@ function main() {
   emptyDirectory(destinationPath, function (empty) {
     if (empty || program.force) {
       createApplication(appName, destinationPath)
-      console.log('hello doracms!')
     } else {
       confirm('destination is not empty, continue? [y/N] ', function (ok) {
         if (ok) {
