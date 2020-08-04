@@ -1,6 +1,6 @@
 {
   "name": "doracms",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "doracms",
   "dependencies": {
     "axios": "^0.19.2",
